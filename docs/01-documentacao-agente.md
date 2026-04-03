@@ -5,39 +5,44 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Ajuda a entender planejamento financeiro, especialmente separação de gastos
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Um agente que explica os conceitos basicos e avançados do conceito do planejamento financeiro, de forma simples e detalhada
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Pessoas que não entendem muito de finanças
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+KirAI
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
-
+- Assertivo
+- Educativo
+- paciente
+- exemplos praticos 
+- sem julgamentos
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+- Formal
+- Didatico
+- acessivel
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: Olá! Como eu poderia tirar suas dúvidas?
+- Confirmação: Ok, Irei fazer as verificações necessarias.
+- Erro/Limitação: Não possuo este tipo de informação, Gostaria de saber se posso ajudar com outra coisa.
 
 ---
 
@@ -47,7 +52,7 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Cliente] -->B["Streamlit (Interface visual)"]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -59,10 +64,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | [Streamlit](https://streamlit.io/) |
+| LLM | Ollama (local) |
+| Base de Conhecimento | [JSON/CSV mockados] |
+| Validação | [Checagem de alucinações] |
 
 ---
 
@@ -70,12 +75,14 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [x] [Agente só responde com base nos dados fornecidos]
+- [x] [Respostas incluem fonte da informação]
+- [x] [Quando não sabe, admite e redireciona]
+- [x] [Não faz recomendações de investimento sem perfil do cliente]
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- NÃO substitui profissionais qualificados 
+- NÃO ensina a fazer investimentos
+- NÃO acessa dados bancarios ou/e sensiveis(como senhas, etc...)

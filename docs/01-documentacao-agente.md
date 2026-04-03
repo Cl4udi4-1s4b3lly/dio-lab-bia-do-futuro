@@ -65,8 +65,8 @@ flowchart TD
 | Componente | Descrição |
 |------------|-----------|
 | Interface | [Streamlit](https://streamlit.io/) |
-| LLM | Ollama (local) |
-| Base de Conhecimento | [JSON/CSV mockados] |
+| LLM | Ollama (local) 
+| Base de Conhecimento |JSON/CSV mockados da pasta 'Data' |
 | Validação | [Checagem de alucinações] |
 
 ---

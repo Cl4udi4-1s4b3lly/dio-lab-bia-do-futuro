@@ -126,5 +126,4 @@ Mais sobre [Few-Shot Prompts](https://hub.asimov.academy/tutorial/zero-one-e-few
 ## Observações e Aprendizados
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
-
-- [somente a adição de links, não acredito ter sido necessario algo a mais]
+- Registramos que existen diferenças significativas no uso de diferentes LLMs. Por exemplo, an asar o ChatEPT, Copilot Claude tivemos comportamentos similares com o mesmo System Prompt, mas cada um deles deu respostas en padrões distintos. Na pratica, todos se sairam bem, mas o ChatGPT se perde no Edge case da "pergunta fora do escopo" (qual a previsão do tempo para amanhã)
